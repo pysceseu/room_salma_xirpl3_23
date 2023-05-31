@@ -7,6 +7,7 @@ import androidx.room.RoomDatabase
 import java.security.AccessControlContext
 import java.security.Key
 
+//anotasi db dan pemanggilan tabel atau entity
 @Database(entities = [user::class], version = 1)
 abstract class dbuser : RoomDatabase() {
     abstract fun userdao() : userDAO
@@ -20,6 +21,7 @@ abstract class dbuser : RoomDatabase() {
                 INSTANCE= it
             }
         }
+        //deklarasi nama database
         private fun buildDatabase(context: Context) = Room.databaseBuilder(
             context.applicationContext, dbuser::class.java, "cobaxirpl3.db"
         ).fallbackToDestructiveMigration().build()

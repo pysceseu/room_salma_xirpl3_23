@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button"
+        android:id="@+id/btnsave"
         android:layout_width="228dp"
         android:layout_height="56dp"
         android:layout_marginBottom="100dp"
@@ -29,30 +29,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <RadioButton
-            android:id="@+id/radioButton"
-            android:layout_width="129dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="47dp"
-            android:layout_marginTop="32dp"
-            android:text="   P u t r a"
-            android:textSize="18sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
-
-        <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="129dp"
-            android:layout_height="48dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="45dp"
-            android:text="   P u t r i"
-            android:textSize="18sp"
+        <EditText
+            android:id="@+id/edjekel"
+            android:layout_width="322dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="108dp"
+            android:ems="10"
+            android:hint="Jenis Kelamin"
+            android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edid" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/ednama"
             android:layout_width="322dp"
             android:layout_height="49dp"
             android:layout_marginTop="32dp"
@@ -61,10 +52,10 @@
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+            app:layout_constraintTop_toBottomOf="@+id/edid" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/edid"
             android:layout_width="322dp"
             android:layout_height="49dp"
             android:layout_marginTop="55dp"
@@ -74,19 +65,34 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="112dp"
-        android:textColor="#FAF8F8"
-        android:textSize="25sp"
-        android:textStyle="italic"
+        android:layout_marginTop="98dp"
+        android:fontFamily="serif"
+        android:text="Input Data Customer"
+        android:textColor="#F1EAEA"
+        android:textSize="28sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="isikan data di bawah ini:"
+        android:textColor="#F6F3F3"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
